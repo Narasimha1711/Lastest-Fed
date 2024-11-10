@@ -1,0 +1,160 @@
+.simple-table {
+  margin: 20px;
+  font-family: 'Arial', sans-serif; /* Changed font for a fresh look */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+  border-radius: 10px;
+  overflow: hidden; /* Prevent content overflow on rounded corners */
+}
+
+th,
+td {
+  padding: 12px; /* Adjusted padding for compactness */
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1; /* Lighter border for separation */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+th {
+  background-color: #4a90e2; /* New header background color */
+  color: #fff; /* White text for contrast */
+  cursor: pointer;
+  font-weight: bold; /* Bold header text */
+  position: relative; /* Positioning for sorting indicators */
+}
+
+th:hover {
+  background-color: #357abd; /* Darker shade on hover */
+}
+
+tr {
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+tr:hover {
+  background-color: #f1f8ff; /* Soft background change on hover */
+  color: #333; /* Standard text color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+}
+
+td {
+  vertical-align: middle; /* Align text with images */
+}
+
+.medicine-image {
+  width: 60px; /* Slightly larger images */
+  height: 60px; /* Keep aspect ratio uniform */
+  object-fit: cover; /* Scale images to fit the container */
+  border-radius: 6px; /* More pronounced rounding */
+  border: 2px solid #4a90e2; /* Border around images */
+}
+
+.seller-input {
+  width: 120px; /* Wider input for better usability */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+  font-size: 14px; /* Consistent font size */
+  transition: border-color 0.3s;
+}
+
+.seller-input:focus {
+  border-color: #4a90e2; /* Highlight border color on focus */
+  outline: none; /* Remove outline */
+}
+
+.change-button {
+  padding: 10px 20px;
+  background-color: #5cb85c; /* Green highlight color */
+  color: white; /* White text for better readability */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: bold;
+}
+
+.change-button:hover {
+  background-color: #4cae4c; /* Darker green on hover */
+}
+
+.sortable {
+  position: relative; /* Relative positioning for indicator */
+}
+
+.sortable:hover {
+  text-decoration: underline;
+  font-weight: bold; /* Bold on hover */
+}
+
+.sortable:after {
+  content: '\25B2'; /* Default up arrow */
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff; /* White color for the arrow */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.sortable.desc:after {
+  content: '\25BC'; /* Down arrow for descending */
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.sortable.active:after {
+  color: #ffd700; /* Active indicator color (gold) */
+}
+
+@media (max-width: 768px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block; /* Change to block layout */
+  }
+
+  th,
+  td {
+    width: 100%; /* Full width for mobile */
+    box-sizing: border-box;
+  }
+
+  th {
+    position: sticky;
+    top: 0;
+    background-color: #4a90e2; /* Keep the header color consistent */
+    z-index: 2;
+  }
+
+  tr {
+    margin-bottom: 15px; /* Space between rows */
+    box-shadow: none; /* Remove hover effect on mobile */
+  }
+
+  .medicine-image {
+    width: 50px; /* Adjusted image size for mobile */
+    height: 50px;
+  }
+
+  .seller-input {
+    width: 80%; /* Adjust input width for mobile */
+  }
+
+  .change-button {
+    width: 100%; /* Full width button for mobile */
+    margin-top: 10px; /* Space between input and button */
+  }
+}
+
+
+
+  

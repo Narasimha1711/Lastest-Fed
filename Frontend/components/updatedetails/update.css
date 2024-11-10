@@ -1,0 +1,120 @@
+/* General List Container Styling */
+.list {
+  display: flex;
+  width: 100%;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f3f5f8; /* Soft, neutral background */
+  padding: 20px; /* Extra padding for better spacing */
+  gap: 20px; /* Space between list items */
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align to the top */
+  overflow: hidden;
+}
+
+.list .listContainer {
+  flex: 6;
+  padding: 25px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* More defined shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  overflow-y: auto;
+  max-height: 85vh; /* Maximum height to avoid overflow */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Header section for the List */
+.listContainer .header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px; /* Space below the header */
+  text-align: center;
+  border-bottom: 2px solid #f0f0f0; /* Subtle divider below header */
+  padding-bottom: 15px;
+}
+
+.listContainer .header::before {
+  content: "🌟";
+  font-size: 28px;
+  margin-right: 10px; /* Add an icon before the title */
+  color: #42b883; /* Accent color for icon */
+}
+
+/* Footer section for the List */
+.listContainer .footer {
+  margin-top: auto; /* Push footer to the bottom */
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+/* List item styling */
+.listContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.listContainer ul li {
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icon and text */
+}
+
+.listContainer ul li:hover {
+  background-color: #e9f7ef; /* Slight greenish hover color */
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+/* List item icons */
+.listContainer ul li .icon {
+  font-size: 24px;
+  color: #42b883; /* Accent color */
+}
+
+/* List item text */
+.listContainer ul li .text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .list {
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px;
+  }
+
+  .list .listContainer {
+    margin: 10px;
+    padding: 20px;
+    max-height: none; /* Remove max-height restriction */
+    box-shadow: none; /* Simplified for mobile */
+    border-radius: 8px;
+  }
+
+  .listContainer .header, .listContainer .footer {
+    font-size: 20px; /* Adjust text size for smaller screens */
+  }
+
+  .listContainer ul li {
+    padding: 12px 15px;
+  }
+}
+
+
+  

@@ -1,0 +1,84 @@
+.navbar {
+  height: 60px; /* Increased height for more comfortable spacing */
+  border-bottom: 1px solid #e0e0e0; /* Slightly darker border for clearer separation */
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* Adjusted font size for balance */
+  color: #333; /* Darker color for text */
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition for background changes */
+}
+
+.navbar .wrapper {
+  width: 100%;
+  padding: 10px 20px; /* Adjusted padding for better spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .wrapper .search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc; /* Clearer border */
+  padding: 5px 10px; /* More padding for better interaction */
+  border-radius: 20px; /* Rounded corners for modern look */
+  background-color: #f9f9f9; /* Subtle background to make it stand out */
+  transition: border-color 0.3s ease; /* Smooth border change */
+}
+
+.navbar .wrapper .search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding-left: 8px; /* Added padding for input */
+  font-size: 14px;
+  color: #333; /* Text color inside input */
+}
+
+.navbar .wrapper .search input::placeholder {
+  font-size: 12px;
+  color: #999; /* Softer color for placeholder text */
+}
+
+.navbar .wrapper .search:hover {
+  border-color: #888; /* Slightly darker border on hover */
+}
+
+.navbar .wrapper .items {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .wrapper .items .item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.navbar .wrapper .items .item:hover {
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+.navbar .wrapper .items .item .icon {
+  font-size: 22px; /* Slightly larger for better visibility */
+  color: #555; /* Softer color for icons */
+}
+
+.navbar .wrapper .items .item .avatar {
+  width: 35px; /* Increased size for better visibility */
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #ddd; /* Light border around the avatar */
+  transition: border-color 0.3s ease; /* Smooth border color change */
+}
+
+.navbar .wrapper .items .item .avatar:hover {
+  border-color: #888; /* Darker border on hover */
+}
+
+
