@@ -1,0 +1,84 @@
+ .new {
+  width: 100%;
+  display: flex;
+}
+
+.newContainer {
+  flex: 6;
+}
+
+.newContainer .top {
+  padding: 20px;
+}
+
+.newContainer .bottom {
+  display: flex;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 20px;
+  margin: 20px;
+}
+
+.newContainer .bottom .left {
+  flex: 1;
+  text-align: center;
+}
+
+.newContainer .bottom .left img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* margin: 0px 66px -155px -1350px; */
+}
+
+.newContainer .bottom .right {
+  flex: 2;
+  padding: 20px;
+}
+
+.newContainer .bottom .right form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.newContainer .bottom .right form .formInput {
+  width: 45%;
+}
+
+.newContainer .bottom .right form .formInput label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.newContainer .bottom .right form .formInput label .icon {
+  cursor: pointer;
+}
+
+.newContainer .bottom .right form .formInput input,
+.newContainer .bottom .right form .formInput textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.newContainer .bottom .right form button{
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+} 
+
+button{
+  padding: 0px 0px 0px 0px ;
+  margin: 0px 0px 0px 0px ;
+}
+ 

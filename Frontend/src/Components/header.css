@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header-logo {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.header-logo:hover {
+    color: #007BFF;
+}
+
+.header-search-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-search-input {
+    width: 25rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0 1rem;
+    font-weight: 700;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-search-input:focus {
+    border: 1px solid #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.header-search-button {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header-search-button:hover {
+    background-color: #0056b3;
+}
+
+.header-cart-profile {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-cart {
+    position: relative;
+}
+
+.header-cart-badge {
+    bottom: 2.3vw;
+    right: 1vw;
+}
+
+.header-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.header-profile-icon {
+    transform: scale(2);
+    position: relative;
+    top: -0.3rem;
+}
+
+.header-dropdown-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 150px;
+    z-index: 1;
+    transition: opacity 0.2s ease-in, visibility 0.2s ease-in;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header-dropdown-menu.visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+}
+
+.header-dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-dropdown-menu ul li {
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.header-dropdown-menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.header-dropdown-menu ul li:last-child {
+    color: red;
+}

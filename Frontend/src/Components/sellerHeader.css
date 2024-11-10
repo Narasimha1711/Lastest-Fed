@@ -1,0 +1,116 @@
+/* header.css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+nav h1 {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav h1:hover {
+    color: #007BFF; 
+}
+
+.search-container {
+    display: flex;
+    align-items: center; 
+}
+
+input {
+    width: 25rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0 1rem;
+    font-weight: 700;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border: 1px solid #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none; 
+}
+
+button {
+    margin-left: 0.5rem; 
+    padding: 0.5rem 1rem; 
+    border: none;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.cart_profile {
+    display: flex;
+    gap: 2rem; 
+    align-items: center; 
+}
+
+.cart {
+    position: relative;
+}
+
+.profile {
+    position: relative; 
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 150px;
+    z-index: 1;
+    transition: opacity 0.2s ease-in, visibility 0.2s ease-in; 
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown-menu.visible {
+    opacity: 1;
+    visibility: visible; 
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-menu ul li:last-child {
+    color: red; 
+} */

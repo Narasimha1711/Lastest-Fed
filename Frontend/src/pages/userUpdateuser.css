@@ -1,0 +1,82 @@
+.updateForm {
+    background: #ffffff; /* White background for the form */
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    margin: 20px auto; /* Centering the form */
+    max-width: 500px; /* Limit the form width */
+    border: 1px solid #e0e0e0; /* Light border for the form */
+}
+
+.updateForm h2 {
+    margin-bottom: 25px; /* Space between title and form */
+    color: #333; /* Darker color for the title */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    font-size: 24px; /* Slightly larger font size */
+    text-align: center; /* Center the title */
+}
+
+.formGroup {
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+.formGroup label {
+    display: block; /* Block display for label */
+    margin-bottom: 8px; /* Space between label and input */
+    font-weight: 600; /* Bold label */
+    color: #555; /* Slightly softer label color */
+    font-family: 'Poppins', sans-serif; /* Modern font for labels */
+}
+
+.formGroup input {
+    width: 100%; /* Full width for input */
+    padding: 12px; /* More padding for inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    font-family: 'Poppins', sans-serif; /* Consistent font */
+    font-size: 16px; /* Larger font size for inputs */
+}
+
+.formGroup input:focus {
+    border-color: #646cff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(100, 108, 255, 0.5); /* Subtle shadow on focus */
+}
+
+.submitButton {
+    background-color: #646cff; /* Primary button color */
+    color: #ffffff; /* White text */
+    padding: 12px 24px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Consistent font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for background color and scale */
+    width: 100%; /* Full width for button */
+}
+
+.submitButton:hover {
+    background-color: #575757; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.successMessage {
+    margin-top: 20px; /* Space above the success message */
+    color: #4CAF50; /* Green color for success */
+    font-weight: 600; /* Bold message */
+    text-align: center; /* Center the message */
+    font-size: 16px; /* Font size for the message */
+    animation: fadeIn 0.5s; /* Fade-in effect for the message */
+}
+
+/* Fade-in animation for success message */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

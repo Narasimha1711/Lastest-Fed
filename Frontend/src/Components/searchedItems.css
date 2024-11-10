@@ -1,0 +1,107 @@
+.medicines-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between cards */
+    padding: 1.5rem;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.medicine-card {
+    display: flex; /* Display image and info side by side */
+    align-items: center; /* Vertically align content */
+    justify-content: space-between; /* Space out the image and details */
+    width: 100%; /* Take full width */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    padding: 1rem; /* Add padding around the card */
+}
+
+.medicine-card:hover {
+    transform: scale(1.03); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a bit more shadow on hover */
+}
+
+.medicine-image {
+    flex: 1; /* Image takes 1 part of available space */
+    max-width: 40%; /* Ensure image doesn't take more than 40% of the space */
+    margin-right: 1.5rem; /* Space between image and product details */
+}
+
+.medicine-image img {
+    width: 100%;
+    height: auto; /* Responsive image */
+    object-fit: cover; /* Ensures image doesn't stretch */
+    border-radius: 8px; /* Round the edges */
+}
+
+.medicine-info {
+    flex: 2; /* Details take 2 parts of the available space */
+    display: flex;
+    flex-direction: column; /* Stack the details vertically */
+    justify-content: space-between; /* Ensure even spacing between elements */
+}
+
+.medicine-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.medicine-description,
+.medicine-seller,
+.medicine-price {
+    margin: 0.5rem 0;
+}
+
+.medicine-price {
+    font-size: 1.3rem;
+    font-weight: bold; /* Highlight price */
+    color: #007BFF;
+}
+
+.buy-btn,
+.cart-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold; /* Emphasize buttons */
+}
+
+.buy-btn:hover,
+.cart-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .medicine-card {
+        flex-direction: column; /* Stack the image and info vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .medicine-image {
+        max-width: 100%; /* Make image take full width */
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 1rem; /* Add space between image and details */
+    }
+
+    .medicine-info {
+        flex-direction: column; /* Stack details vertically */
+        align-items: flex-start; /* Align details to the start */
+    }
+
+    .buy-btn,
+    .cart-btn {
+        width: 100%; /* Make buttons full width on small screens */
+    }
+}

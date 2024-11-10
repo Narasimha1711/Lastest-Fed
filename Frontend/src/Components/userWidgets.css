@@ -1,0 +1,102 @@
+/* Base styling for the widget */
+.widget {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 15px; /* Increased padding for better spacing */
+  background-color: #ffffff; /* White background for contrast */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 12px; /* Slightly larger radius for smoother edges */
+  height: 120px; /* Increased height for more content space */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for the widget */
+.widget:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Flex layout for left and right sides */
+.widget .left, .widget .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px; /* Space between elements */
+}
+
+/* Title styling */
+.widget .left .title, .widget .right .title {
+  font-weight: 600; /* Bold title */
+  font-size: 16px; /* Slightly larger font */
+  color: #ff6b6b; /* Coral color */
+  text-transform: uppercase; /* Uppercase for emphasis */
+  letter-spacing: 1px; /* Added letter spacing for readability */
+}
+
+/* Counter styling */
+.widget .left .counter, .widget .right .counter {
+  font-size: 32px; /* Larger font for counter */
+  font-weight: 400;
+  color: #333; /* Darker text color */
+}
+
+/* Link styling */
+.widget .left .link, .widget .right .link {
+  width: max-content;
+  font-size: 13px;
+  color: #1e90ff; /* Blue color for links */
+  border-bottom: 1px solid #1e90ff; /* Blue underline */
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth hover effect */
+}
+
+.widget .left .link:hover, .widget .right .link:hover {
+  color: #ff6b6b; /* Change link color on hover */
+  border-bottom: 1px solid #ff6b6b; /* Change underline color on hover */
+}
+
+/* Percentage change styling */
+.widget .left .percentage, .widget .right .percentage {
+  display: flex;
+  align-items: center;
+  font-size: 16px; /* Slightly larger percentage */
+  font-weight: 500; /* Bold percentage */
+}
+
+/* Positive and negative percentage colors */
+.widget .left .percentage.positive, .widget .right .percentage.positive {
+  color: #28a745; /* Green for positive change */
+}
+
+.widget .left .percentage.negative, .widget .right .percentage.negative {
+  color: #dc3545; /* Red for negative change */
+}
+
+/* Icon styling */
+.widget .left .icon, .widget .right .icon {
+  font-size: 24px; /* Larger icons */
+  padding: 8px;
+  border-radius: 50%; /* Rounded icons for a smoother look */
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background for icons */
+  color: #007bff; /* Blue icon color */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for icons */
+.widget .left .icon:hover, .widget .right .icon:hover {
+  background-color: #007bff; /* Blue background on hover */
+  color: #fff; /* White icon color on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .widget {
+    height: auto;
+    padding: 10px;
+    flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+}
+
+  

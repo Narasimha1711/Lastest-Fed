@@ -1,0 +1,60 @@
+/* Main home container styling */
+.home {
+    display: flex;
+    background-color: #f9f9f9; /* Light background for the home page */
+    min-height: 100vh; /* Ensure the home container takes full viewport height */
+    padding: 20px; /* Add padding for overall spacing */
+}
+
+/* Home container content */
+.home .homeContainer {
+    flex: 6;
+    background-color: #ffffff; /* White background for content area */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px; /* Padding inside the container */
+    margin: 10px; /* Margin for spacing around the container */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover transitions */
+}
+
+/* Widget container */
+.home .homeContainer .widgets {
+    display: flex;
+    flex-wrap: wrap; /* Allow widgets to wrap on smaller screens */
+    padding: 20px;
+    gap: 20px; /* Consistent spacing between widgets */
+}
+
+/* Hover effect for the entire homeContainer */
+.home .homeContainer:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+/* Link styling */
+a {
+    text-decoration: none; /* Remove default underline */
+    color: #333; /* Darker color for better readability */
+    font-weight: 500; /* Medium weight for emphasis */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+a:hover {
+    color: #007bff; /* Light blue color on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .home .homeContainer {
+        margin: 0; /* Remove margin on smaller screens for full width */
+        padding: 15px; /* Adjust padding for mobile devices */
+    }
+
+    .home .homeContainer .widgets {
+        flex-direction: column; /* Stack widgets vertically */
+    }
+}
